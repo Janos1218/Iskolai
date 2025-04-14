@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy Kaland</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1
+            class="text-center title my-4 animate__animated animate__fadeInDown"
+          >
+            A Titokzatos Királyság Kalandja
+          </h1>
+
+          <div
+            id="loreSection"
+            class="world-lore animate__animated animate__fadeIn"
+          >
+            <h3 class="text-center">A Világ Háttértörténete</h3>
+            <p>
+              A <strong>Végtelen Erdő</strong> és a
+              <strong>Kőszív Hegyei</strong> között fekszik Eldoria titokzatos
+              királysága, ahol négy nagy hatalom küzd az uralomért:
+            </p>
+            <ul>
+              <li>
+                A <span style="color: #a3d9ff">Tündérek Tanácsa</span>, akik
+                őrzik az ősi erdők titkait
+              </li>
+              <li>
+                A <span style="color: #ff6b6b">Sötét Varázslók Rendje</span>,
+                akik a felejthetetlen hatalomra vágynak
+              </li>
+              <li>
+                A <span style="color: #a0ffa0">Bölcsek Köre</span>, akik a tudás
+                őrzői
+              </li>
+              <li>
+                A <span style="color: #ffcc5c">Vándorló Harcosok</span>, akiknek
+                nincs állandó otthonuk
+              </li>
+            </ul>
+            <p>
+              Te, mint egy egyszerű utazó, a végzet sodrása közepette találod
+              magad, amikor egy ősi prófécia szerint "a négy hatalom közül három
+              el fog bukni, és egy idegen dönti el Eldoria sorsát"...
+            </p>
+
+            <div class="character-creation mt-4">
+              <h4 class="text-center">Karaktered létrehozása</h4>
+              <div class="mb-3">
+                <label for="charName" class="form-label">Hősöd neve:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="charName"
+                  placeholder="Add meg a neved"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Kaszt:</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="charClass"
+                    id="warrior"
+                    value="warrior"
+                    checked
+                  />
+                  <label class="form-check-label" for="warrior"
+                    >Harcos (Erő: +3, Ügyesség: +1, Bölcsesség: +0)</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="charClass"
+                    id="rogue"
+                    value="rogue"
+                  />
+                  <label class="form-check-label" for="rogue"
+                    >Rabló (Erő: +1, Ügyesség: +3, Bölcsesség: +0)</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="charClass"
+                    id="wizard"
+                    value="wizard"
+                  />
+                  <label class="form-check-label" for="wizard"
+                    >Varázsló (Erő: +0, Ügyesség: +1, Bölcsesség: +3)</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              id="startBtn"
+              class="btn btn-warning d-block mx-auto mt-3 animate__animated animate__pulse animate__infinite"
+            >
+              <a href="./1.oldal.html">Kezdd el a kalandot!</a>
+            </button>
+          </div>
+
+          <div
+            class="story-container animate__animated animate__fadeIn"
+            id="storyContainer"
+            style="display: none"
+          >
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
